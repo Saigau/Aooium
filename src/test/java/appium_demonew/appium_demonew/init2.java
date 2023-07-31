@@ -24,12 +24,14 @@ public void launch2() throws MalformedURLException
 
 	cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
 	cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13");
-	cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
+	cap.setCapability(MobileCapabilityType.DEVICE_NAME, "MB45K7L74PCQLVYP");
 	
-
+cap.setCapability(MobileCapabilityType.NO_RESET,true);
 	
 	cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
 	cap.setCapability("appWaitActivity", "*");
+cap.setCapability(MobileCapabilityType.UDID, "MB45K7L74PCQLVYP");
+
 
 	cap.setCapability("appPackage", "com.android.chrome");
 
